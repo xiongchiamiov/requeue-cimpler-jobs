@@ -22,9 +22,7 @@ from docopt import docopt
 from envoy import run
 from github3 import authorize, login, GitHub
 
-# TODO
-#from requeue-cimpler-jobs import VERSION
-VERSION = '0.1.0'
+from requeue_cimpler_jobs import VERSION
 
 # Stack traces are ugly; why would we want to print one on ctrl-c?
 def nice_sigint(signal, frame):
